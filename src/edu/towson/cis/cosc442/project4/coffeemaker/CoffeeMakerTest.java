@@ -152,7 +152,7 @@ public class CoffeeMakerTest {
 		boolean result = fixture.addInventory(amtCoffee, amtMilk, amtSugar, amtChocolate);
 
 		// add additional test code here
-		assertEquals(false, result);
+		assertEquals(true, result);
 	}
 
 	/**
@@ -220,6 +220,18 @@ public class CoffeeMakerTest {
 
 		boolean result = fixture.addRecipe(r);
 						
+		// add additional test code here
+		assertEquals(true, result);
+	}
+
+	@Test
+	public void testAddRecipe_5()
+		throws Exception {
+		CoffeeMaker fixture = CoffeeMakerFactory.createCoffeeMaker();
+		Recipe r = RecipeFactory.createRecipe();
+
+		boolean result = fixture.addRecipe(r);
+			
 		// add additional test code here
 		assertEquals(true, result);
 	}

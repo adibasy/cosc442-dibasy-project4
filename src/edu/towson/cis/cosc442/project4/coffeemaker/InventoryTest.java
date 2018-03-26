@@ -178,6 +178,17 @@ public class InventoryTest {
 
 		// add additional test code here
 	}
+	
+	@Test
+	public void testSetChocolate_3()
+		throws Exception {
+		Inventory fixture = InventoryFactory.createInventory();
+		int chocolate = -5;
+
+		fixture.setChocolate(chocolate);
+
+		// add additional test code here
+	}
 
 	/**
 	 * Run the void setCoffee(int) method test.
